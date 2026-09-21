@@ -52,20 +52,6 @@ A script is included for sequential execution without a Jupyter server; it embed
 python scripts/execute_notebook.py notebooks/Linear_Regression.ipynb
 ```
 
-## Publish to GitHub
-
-Create an empty repository named `machine-learning-projects`, then run from this directory:
-
-```bash
-git init -b main
-git add .
-git commit -m "Add solved machine learning notebooks and verified experiments"
-git remote add origin https://github.com/YOUR_USERNAME/machine-learning-projects.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME`. If the repository already has content, clone it and copy these files into it instead of initializing another repository.
-
 ## Attribution
 
 The supplied notebooks include course-authored instructions and scaffolding. Their original data references are retained. Solutions and explanatory additions were prepared with AI assistance. No redistribution license or ownership is asserted over the original course material or datasets.
