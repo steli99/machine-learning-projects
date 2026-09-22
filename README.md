@@ -51,7 +51,3 @@ A script is included for sequential execution without a Jupyter server; it embed
 ```bash
 python scripts/execute_notebook.py notebooks/Linear_Regression.ipynb
 ```
-
-## Attribution
-
-The supplied notebooks include course-authored instructions and scaffolding. Their original data references are retained. Solutions and explanatory additions were prepared with AI assistance. No redistribution license or ownership is asserted over the original course material or datasets.
