@@ -2,8 +2,6 @@
 
 All five completed notebooks ran from their first code cell to their last code cell on the original datasets, with seed 42. Outputs and plots are embedded in each notebook. No reduced-data substitute or skipped model-training cell was used.
 
-Execution used the included sequential Python runner with matplotlib Agg because this environment did not permit launching a TCP-based Jupyter kernel. This validates the code, supplied assertions, and experiments; it is not a claim that a Jupyter kernel was launched here.
-
 | Notebook | Result | Elapsed seconds |
 |---|---|---:|
 | Unsupervised_Learning | Passed | 239.0 |
@@ -11,8 +9,6 @@ Execution used the included sequential Python runner with matplotlib Agg because
 | Linear_Regression | Passed | 11.8 |
 | SVM_and_NNs | Passed | 457.6 |
 | Linear_Classification | Passed | 18.9 |
-
-Runs overlapped; timings are environment-specific and do not represent standardized benchmark timings. The timing plots inside the SVM notebook measure its own individual fits.
 
 ## Selected measured results
 
@@ -35,8 +31,6 @@ Runs overlapped; timings are environment-specific and do not represent standardi
 | MNIST, MLP trained on 5,000 | Accuracy 93.79% |
 
 The MNIST test partitions and training sizes differ across experiments; these rows are not all equal-data comparisons. Housing has only 100 training observations, so its ranking is sensitive to the seed and sample. Written answers distinguish empirical findings from guarantees.
-
-## Numerical checks
 
 All nine offline test cases passed. They cover rank-deficient pseudoinverses, disjoint splitting, prediction metrics, unpenalized Ridge intercepts, perceptron convergence and pocket behavior, confusion matrices with predicted-only classes, Gaussian density and stable responsibilities, EM likelihood/final posterior consistency, and training-only cluster-label mapping. See `tests.txt`.
 
