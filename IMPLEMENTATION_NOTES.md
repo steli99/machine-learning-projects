@@ -1,6 +1,4 @@
 # Implementation notes
-
-- All original cell positions are retained; answer-only code placeholders become Markdown answers. Setup uses the reproducible seed 42. No student registration number was fabricated.
 - Least squares uses the SVD of the design matrix directly, avoiding the squared condition number of normal equations. The custom pseudoinverse handles rectangular and rank-deficient matrices.
 - Prediction intervals use residual degrees of freedom N minus the number of fitted parameters, with the intercept counted once. Their additional noise variance distinguishes them from confidence intervals for the conditional mean. Coefficient intervals are individual 95% intervals.
 - The perceptron loop was repaired. Its pocket retains copied weights with the lowest training error; boundary points count as mistakes. Constrained data splitting checks feasibility and has a constructive fallback.
