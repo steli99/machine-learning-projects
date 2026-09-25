@@ -28,8 +28,6 @@ python -m jupyterlab
 
 Open a notebook, restart its kernel, and run all cells in order. Some cells intentionally add an intercept or rescale an existing variable, so selectively rerunning those cells is not equivalent to a fresh execution.
 
-The project uses `ID_number = 42` as a random seed, **not an invented university registration number**. For a course submission, replace it with your real matricola and use the course's required filenames; changing the seed changes the results.
-
 ## Data and computational cost
 
 The original dataset-loading URLs remain in the notebooks. CSV data are read from the referenced course repository; Wine is bundled with scikit-learn; MNIST is downloaded through OpenML and cached by scikit-learn. Internet access is needed for the initial remote downloads. Datasets are not included in this repository.
